@@ -1,4 +1,5 @@
 import java.text.NumberFormat;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -18,7 +19,7 @@ public class LearnJava {
 		System.out.println(message3);
 
 		
-		//Arrays:
+		//Arrays:used to store multiple values in a single variable
 		//int[] numbers= new int[5];
 		//numbers[0]=1;
 		//numbers[1]=5;
@@ -105,7 +106,96 @@ public class LearnJava {
 		}
 		
 		
+		//arrayList is a collaction:
 		
+	ArrayList<String> food= new ArrayList<String>();
+	food.add("pizz");
+	food.add("hotdog");
+	food.add("hamberger");
+	
+	
+	//replace: 
+	food.set(0,"sushi");
+	//remove:
+	food.remove(2);
+	//clear ArrayList:
+	food.clear();
+	
+	for(int i=0; i<food.size(); i++ ) {
+		System.out.println(food.get(i));
+	}
+	
+	
+	//two dimantion ArrayList:we can add 3 or more listes too
+	ArrayList<String> bakeryList = new ArrayList<String>();
+	bakeryList.add("pasta");
+	bakeryList.add("garlic bread");
+	bakeryList.add("dounats");
+	System.out.println(bakeryList);
+	System.out.println(bakeryList.get(0));
+	
+	ArrayList<String> produceList = new ArrayList<String>();
+	produceList.add("tomatoes");
+	produceList.add("zucchini");
+	produceList.add("peppers");
+	
+	
+	
+	ArrayList<ArrayList<String>> groceryList =  new ArrayList<ArrayList<String>>();
+	
+	groceryList.add(bakeryList);
+	groceryList.add(produceList);
+	
+	System.out.println(groceryList);
+	System.out.println(groceryList.get(0)); //show all of the fist list
+	System.out.println(groceryList.get(0).get(0)); //show a one element in the first list
+	
+	//for each in ArrayList:
+	for(String i : bakeryList) {
+		System.out.println(i);
+	}
+	
+	
+	 //for each loops:
+	String[] animal= {"cat" , "dog"};
+	
+	for(String i:animal) {
+		System.out.println(i);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 		
 		
 		
