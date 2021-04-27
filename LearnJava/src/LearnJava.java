@@ -157,13 +157,15 @@ public class LearnJava {
 	
 	
 	 //for each loops:
-	String[] animal= {"cat" , "dog"};
+	String[] animals= {"cat" , "dog"};
 	
-	for(String i:animal) {
+	for(String i:animals) {
 		System.out.println(i);
 	}
 	
 	
+	//methods:
+	 
 	
 	
 	
