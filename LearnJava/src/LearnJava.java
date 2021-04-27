@@ -30,7 +30,7 @@ public class LearnJava {
 		System.out.println(Arrays.toString(numbers));
 		System.out.println(numbers[4]);
 		
-		//to dimantion arrays:
+		//two dimantion arrays:
 		int[][] dimenNumbers= new int[2][3];
 		dimenNumbers[0][0]=1;
 		System.out.println(Arrays.deepToString(dimenNumbers));
@@ -69,10 +69,48 @@ public class LearnJava {
 		
 		
 		//reading input:
-		Scanner scan = new Scanner(System.in);
-		System.out.print("Name:");
-		String name=scan.nextLine().trim(); // nextline() is a method that can accept full name . if we use next() method and we enter full name , we can see only name in the output.
-		System.out.println("Your name " + name);
+		//Scanner scan = new Scanner(System.in);
+		//System.out.print("Name:");
+		//String name=scan.nextLine().trim(); // nextline() is a method that can accept full name . if we use next() method and we enter full name , we can see only name in the output.
+		//System.out.println("Your name " + name);
+		//scan.close();
+		
+		//while:
+		Scanner scanner= new Scanner(System.in);
+		String nameA ="";
+		
+		while(nameA.isBlank()) {
+			System.out.print("Enter your name:");
+			nameA=scanner.nextLine();
+		}
+		System.out.println("Hello " + nameA );
+		
+		//nested loops:
+		int rows;
+		int columns;
+		String symble="";
+		
+		System.out.println("Enter of rows:");
+		rows=scanner.nextInt();
+		System.out.println("Enter of columns:");
+		columns=scanner.nextInt();
+		System.out.println("Enter symble to use:");
+		symble=scanner.next();
+		
+		for(int i=1; i<=rows; i++) {
+			System.out.println();
+			for(int j=1; j<=columns; j++) {
+				System.out.print(symble);
+			}
+		}
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 
 }
